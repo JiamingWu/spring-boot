@@ -34,13 +34,28 @@ dependencies {
 //    }
 //    compile("org.springframework.boot:spring-boot-starter-jetty")
     compile("org.springframework.boot:spring-boot-starter-actuator")
+//    compile("org.springframework.boot:spring-boot-starter-data-jpa")
     compile("org.springframework.boot:spring-boot-devtools")
+    compile 'org.springframework:spring-orm:4.2.5.RELEASE'
     
     // use jsp template engine
     providedRuntime 'org.apache.tomcat.embed:tomcat-embed-jasper'
     compile 'javax.servlet:jstl:1.2'
 
     compile "org.sitemesh:sitemesh:3.0.0"
+    
+    // jdbc driver
+    compile "net.sourceforge.jtds:jtds:1.3.1"
+    
+    // hibernate 
+    compile "org.hibernate:hibernate-core:4.2.12.Final"
+    compile "org.hibernate:hibernate-core:4.2.12.Final"
+    compile("org.hibernate:hibernate-proxool:4.2.12.Final") {
+        exclude group: "proxool"
+    }
+    compile("com.cloudhopper.proxool:proxool:0.9.1") {
+        exclude group: "avalon-framework"
+    }
     
     testCompile("junit:junit")
 }

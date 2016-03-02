@@ -1,5 +1,8 @@
 spring:
-    view:
-        prefix: /WEB-INF/views/
-        suffix: .jsp
-        
+  view:
+    prefix: /WEB-INF/views/
+    suffix: .jsp
+server:
+  compression:
+    enabled:true
+    min-response-size:2048
