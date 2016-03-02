@@ -3,10 +3,10 @@
   <proxool>
     <alias>sample</alias>
     <driver-class>net.sourceforge.jtds.jdbc.Driver</driver-class>
-    <driver-url>jdbc:jtds:sqlserver://127.0.0.1:1433/Dev</driver-url>
+    <driver-url>jdbc:jtds:sqlserver://10.60.90.47:1433/PatentCloudDev</driver-url>
     <driver-properties>
       <property name="user" value="sa"/>
-      <property name="password" value="sa"/>
+      <property name="password" value="itec.sql.123"/>
     </driver-properties>
     <maximum-connection-count>10</maximum-connection-count>
     <maximum-active-time>600000</maximum-active-time>
